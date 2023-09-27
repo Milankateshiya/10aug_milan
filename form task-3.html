@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form task-3</title>
+    <style>
+        .class-1{
+            float: left;
+            margin-left: 2%;
+            width: 8%;
+        }
+        .class-2{
+            float: right;
+            margin-right: 0%;
+            width: 90%;
+        }
+        .milan{
+            float: right;
+        }
+        
+
+
+    </style>
+    
+</head>
+<body>
+
+    <span class="milan">*denotes a required field</span>
+
+    <form action="" method="post">
+
+       
+
+        <div class="class-1">
+
+            <label for="nm">Name</label><br><br>
+            <label for="nm">Last Name</label><br><br>
+            <label for="nm">Father Name</label><br><br>
+            <label for="date">Date of birth</label><br><br>
+            <label for="tel">Tel</label><br><br>
+            <label for="nm">High School Name</label><br><br>
+            <label for="nm">Permanent Address</label><br><br>
+            <label for="nm">Your Level</label><br><br>
+            <label for="email">Email</label><br><br>
+            <label for="nm">Degree Program</label><br><br>
+
+        </div>
+        <div class="class-2">
+            <input type="text" name="nm" id="" required minlength="3" maxlength="15" pattern="[a-z,A-Z]{3,5}">*<br><br>
+            <input type="text" name="nm" id="">*<br><br>
+            <input type="text" name="nm" id="">*<br><br>
+            <input type="date" name="date" id="">*<br><br>
+            <input type="tel" name="phone" id="" required pattern="[0-9]{10}">*<br><br>
+            <input type="text" name="nm" id="">*<br><br>
+            <input type="address" name="address" id="">*<br><br><br>
+            <select name="month" id="">
+                <option value="1st Year" selected>1st Year</option>
+                <option value="2th Year">2th Year</option>
+                <option value="3td Year">3td Year</option>
+            </select>*<br><br>
+            <input type="email" name="" id="">*<br><br>
+            <select name="file" id=""><br><br>
+                <option value="BS in pre-med physics" selected>BS in pre-med physics</option>
+                <option value="maths">maths</option>
+                <option value="science">science</option>
+            </select>*<br><br>
+            <input type="submit" value="Register" name="" id="">
+            
+
+        </div>
+    </form>
+    
+</body>
+</html>
