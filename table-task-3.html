@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table-Task-3</title>
+    <style>
+        table,th,td{
+            border: 2px solid black;
+        }
+        table{
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <table cellpandin="3px" cellspecing="2px">
+        <thead>
+            <tr>
+                <th rowspan="3">Day</th>
+                <th colspan="3">Seminar</th>
+            </tr>
+            <tr>
+                <th colspan="2" align="center">schedule</th>
+                <th rowspan="2" align="center">Topic</th>
+            <tr>
+                <th align="center">Begin</th>
+                <th align="center">End</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Monday</td>
+                <td rowspan="2">8:00 a.m.</td>
+                <td rowspan="2">5:00 p.m.</td>
+                <td align="center">Introduction</td>
+                <td>
+                    <tr>
+                        <td>Validity: DND and Relax NG</td>
+                    </tr>
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="4">tuesday</td>
+            </tr>
+            <tr>
+                <td>8:00 </td>
+                <td>11:00</td>
+                <td rowspan="3">
+                    <table cellpendib="10" cellspecing="4">
+                        <tr>
+                            <td>XPath</td>
+                        </tr>
+                        <tr>
+                            <td>xsl tranasformatic</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>11:00a.m.</td>
+                <td>2:00p.m.</td>
+            </tr>
+            <tr>
+                <td>2:00 p.m.</td>
+                <td>5:00p.m.</td>
+            </tr>
+            <tr>
+                <td>wednesday</td>
+                <td>8:00 a.m.</td>
+                <td>12:00p.m.</td>
+                <td>xsl formatting objects</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>
