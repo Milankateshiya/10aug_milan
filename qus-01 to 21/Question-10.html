@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question-10</title>
+</head>
+<body>
+    <h5>How can we club two or more rows or columns into a single row or column in an HTML
+        table? With Example.</h5>
+        <p>We use the colspan and rowspan attribute, to merge cells in HTML. <br> The rowspan attribute is for the number of rows a cell should merge, whereas the colspan attribute is for the number of columns a cell should merge.
+
+        </p>
+        <h4>Example</h4>
+        <h4>rowspan:-</h4>
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simpel</title>
+    <style>
+        table,th,td{
+            border: 2px solid rgb(150, 160, 255);
+            border-collapse:collapse ;
+        }
+        table{
+            width: 100%;
+        }
+        thead{
+            background: #eee;
+        }
+        
+    </style>
+
+</head>
+<body>
+    <table cellpading="5px" cellspacing="3px">
+        <caption>sudent result</caption>
+        <thead>
+            <tr>
+                <th>no</th>
+                <th>name</th>
+                <th>total</th>
+                <th>result</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr align="center">
+                <td>1</td>
+                <td>sita</td>
+                <td rowspan="3">400</td>
+                <td rowspan="3">pass</td>
+            </tr>
+            <tr align="center">
+                <td>2</td>
+                <td>gita</td>
+            </tr>
+            <tr align="center">
+                <td>3</td>
+                <td>rita</td>
+            </tr>
+
+    </table>
+</body>
+</html>
+
+<h4>Example</h4>
+<h4>colspan</h4>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table task-2</title>
+    <style>
+        table,th,td{
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+        table{
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <table cellpaning="8px" callspecing="4px" >
+        <tr>
+            <th colspan="3">Time Table</th>
+        </tr>
+        <tr align="center">
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>wed</th>
+        </tr>
+        <tr align="center">
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Science</td>
+            
+        </tr>
+        <tr align="center">
+            <td>Social</td>
+            <td>History</td>
+            <td>English</td>
+            
+        </tr>
+        
+
+    </table>
+</body>
+</html>
+
+    
+</body>
+</html>
