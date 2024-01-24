@@ -1,0 +1,144 @@
+*{
+    /* margin: 0;
+    padding: 0; */
+}
+.clip{
+    clip-path: polygon(0% 0%, 100% 0, 100% 90%, 50% 100%, 0 90%);
+    background-image: url(https://codetheweb.blog/assets/img/posts/css-advanced-background-images/cover.jpg);
+    height: 75vh;
+    width: 100%;
+    position: relative;
+    
+
+}
+.clip .header{
+    
+    width: 100%;
+    text-decoration-color: black;
+}
+.header ul{
+    text-align: center;
+
+}
+.header ul li{
+    display: inline;
+    list-style: none;
+    color:whitesmoke;
+
+}
+.header ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    margin: 20px;
+    padding: 20px;
+
+}
+.header ul li a:hover{
+    color:whitesmoke;
+    text-decoration: underline;
+    text-decoration-color: black; 
+}
+.line{
+    text-align: center;
+    margin-top: 5%;
+    color: aliceblue;
+    
+}
+.line h2{
+    font-size: 45px;
+}
+.big{
+    text-align: center;
+    font-size: 30px;
+    color: aliceblue;
+}
+.lorem{
+    /* text-align: center; */
+    font-size: 20px;
+   margin: auto;
+    width: 50%;
+    color: aliceblue;
+}
+
+.lorem p{
+    text-align: center;
+}
+.button{
+    text-align: center;
+    margin-top: 7%;
+    
+}
+.button button{
+    padding: 10px;
+    margin: 10px;
+    background: transparent;
+
+}
+.button button:hover{
+    background-color: chocolate;
+}
+.arrow{
+    position: absolute;
+}
+#left{
+    top: 40%;
+    left: 7%;
+    border: none;
+    background: transparent;
+    font-size: 25px;
+}
+#right{
+    top: 40%;
+    right: 7%;
+    border: none;
+    background: transparent;
+    font-size: 25px;
+}
+#down{
+    right: 49%;
+    bottom: 21%;
+    font-size: 25px;
+    border-radius: 50%;
+
+}
+.arrow:hover{
+    color: blue;
+    background-color: orange;
+}
+.info {
+    display: flex;
+    margin-top: 5%;
+    gap: 10%;
+    
+}
+.info .item{
+    text-align: center;
+}
+.info .item i{
+    border: 1px solid chocolate;
+    padding: 15px;
+    color: chocolate;
+    /* transform: rotate(45deg); */
+    
+}
+.info .item i:hover{
+    border: 1px solid chartreuse;
+    transform: rotate(45deg);
+}
+.info .item  h4:hover{
+    color: chocolate;
+    /* */
+    /* border-color: chocolate; */
+}
+.info .item p{
+    font-size: 15px;
+    justify-content: center;
+}
+.info .emty{
+    border: 1px solid;
+    width: 15%;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+
