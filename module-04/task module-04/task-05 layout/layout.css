@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    /* margin: 0.8%, ; */
+
+    padding: ;
+    height: 80vh;
+    width: 100%;
+    background-color: antiquewhite;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2% ;
+}
+.main .box{
+    border: 1px solid black;
+    height: auto;
+    width: auto;
+    /* overflow: hidden; */
+
+}
+.box .top{
+    margin-top: ;
+    background-color: darkgray;
+    text-align: center;
+    height: 50%
+}
+ .box .top h3{
+    /* margin-top: 20%; */
+    /* text-align: center; */
+    /* line-height: 50%; */
+    padding: 10%;
+    /* display: flex; */
+    /* align-items: center; */
+}
+.box .bottom{
+    text-align: justify;
+    
+    /* text-align: center; */
+    /* height: 50%; */
+}
+button{
+    padding: 5px;
+    margin: 0;
+}
