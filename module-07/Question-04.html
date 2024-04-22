@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Question-04</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+      }
+      /* body {
+        justify-content: center;
+        align-items: center;
+      } */
+      .parent {
+        background-color: blanchedalmond;
+        border: 1px black solid;
+        width: 400px;
+        height: 300px;
+        padding: 10px;
+      }
+      .child {
+        background-color: aqua;
+        border: 1px solid;
+        padding: 10px;
+        width: 300px;
+        height: 200px;
+      }
+      .sub-child {
+        background-color: blanchedalmond;
+        border: 1px solid;
+        padding: 10px;
+        width: 150px;
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Q-04 Event bubbling tickling example.?</h3>
+    <h4>Ans.</h4>
+    <div class="parent">
+      parent
+      <div class="child">
+        child
+        <div class="sub-child">sub-child</div>
+      </div>
+    </div>
+    <script>
+      $(".parent").click(() => {
+        console.log("parent click");
+      });
+      $(".child").click(() => {
+        console.log("child click");
+      });
+      $(".sub-child").click(() => {
+        console.log(" sub child click");
+      });
+
+      $(".parent").click(() => {
+        alert("parent");
+      });
+      $(".child").click(() => {
+        alert("child");
+      });
+      $(".sub-child").click(() => {
+        alert("sub-child");
+      });
+    </script>
+    <br /><br />
+
+    <pre>
+        $(".parent").click(() => {
+            console.log("parent click");
+          });
+          $(".child").click(() => {
+            console.log("child click");
+          });
+          $(".sub-child").click(() => {
+            console.log(" sub child click");
+          });
+    
+          $(".parent").click(() => {
+            alert("parent");
+          });
+          $(".child").click(() => {
+            alert("child");
+          });
+          $(".sub-child").click(() => {
+            alert("sub-child");
+          });
+    </pre>
+  </body>
+</html>

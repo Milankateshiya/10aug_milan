@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Question-03</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+      }
+      .box {
+        width: 700px;
+        height: 400px;
+        background-color: bisque;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+        border-radius: 30px;
+        overflow: hidden;
+      }
+
+      .child {
+        height: 100px;
+        width: 100px;
+        background-color: yellowgreen;
+        border: 1px solid;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20%;
+      }
+      .btns {
+        background-color: blue;
+        justify-content: center;
+        width: 500px;
+        display: flex;
+        border-radius: 30px;
+        margin: 10px;
+      }
+
+      button {
+        font-size: 2rem;
+        padding: 15px;
+        background-color: aquamarine;
+        border-radius: 20px;
+        margin: 10px;
+        justify-content: center;
+        align-items: center;
+      }
+      /* .left { 
+        align-items: center;
+        border: 5px solid red;
+        justify-content: center;
+      } */
+    </style>
+  </head>
+  <body>
+    <h4>How to create slider with animation?</h4>
+    <h3>Ans.</h3>
+    <div class="box">
+      <div class="child p-1">
+        1
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcf7k0v6mJcMXF8dBIm5lNiiVujERgTRG0Fj2lpudY7Q&s"
+          alt=""
+        />
+      </div>
+      <div class="child p-2">
+        2
+        <!-- <img
+          src="https://expertphotography.b-cdn.net/wp-content/uploads/2021/08/Store-Photos-Maxime-Medvedev.jpg"
+          alt=""
+        /> -->
+      </div>
+      <div class="child p-3">
+        3
+        <!-- <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNGKsiUKWRi3qDkc27uYFvv-B_-gx-XjNHFqbI5azj1f8G7uZyFogPHKtdt7amnn44WlQ&usqp=CAU"
+          alt=""
+        /> -->
+      </div>
+      <div class="child p-4">
+        4
+        <!-- <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6mlKexlEh5-azpNXxqRLgkEushfSkFvxcuvlvlKgXVWcjKdRiYVJYWJ7i8ABtwYhA5W8&usqp=CAU"
+          alt=""
+        /> -->
+      </div>
+      <div class="child p-5">
+        5
+        <!-- <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz0czTZvpJPczUfw6-sfNEBma0NjAYaTHYLplVcfQB_CvvDKaQa4Bsm2BafplsG7cF-GE&usqp=CAU"
+          alt=""
+        /> -->
+      </div>
+    </div>
+    <div class="btns">
+      <button class="left">Left</button>
+
+      <button class="right">Right</button>
+    </div>
+    <script>
+      $(".left").click(() => {
+        slideLeft();
+      });
+      $(".right").click(() => {
+        slideRight();
+      });
+      let leftCounter = 2;
+      let rightCounter = 2;
+      function slideLeft() {
+        console.log("in slideLeft func");
+        children = $(".box").find("*");
+        childrenKey = Object.keys($(".box").find("*"));
+        // console.log(children);
+        // console.log(children[childrenKey[1]]);
+        // console.log($(".child").eq(0));
+
+        for (i = 0; i < children.length; i++) {
+          $(".child")
+            .eq(i)
+            .css({ transform: `translateX(-${leftCounter * 10}px)` });
+        }
+        leftCounter++;
+      }
+      function slideRight() {
+        console.log("in slideRigth func");
+        children = $(".box").find("*");
+        childrenKey = Object.keys($(".box").find("*"));
+
+        for (i = 0; i < children.length; i++) {
+          $(".child")
+            .eq(i)
+            .css({ transform: `translateX(${rightCounter * 10}px)` });
+        }
+        rightCounter++;
+      }
+    </script>
+  </body>
+</html>
